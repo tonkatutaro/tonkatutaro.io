@@ -48,29 +48,65 @@ table {
 	border-spacing: 0;
 }
 
+a{
+	text-decoration: none;
+}
+
 header {
-	background-color: blue;
-	font-size: 30px;
-	color: azure;
-	height: 70px;
-}
-
-.hed div {
-	float: left;
-	padding: 20px;
-}
-
-.hed a {
-	float: right;
-	padding: 20px;
-}
-
-img {
+	background-color:rgba(0, 179, 135, 0.9);
+	height: 150px;
 	width: 100%;
-	height:  auto;
 }
 
-li {
+.container{
+	width: 1170px;
+	padding:0 15px;
+	margin: 0 auto;
+}
+
+
+.hed-left h1 {
+	float: left;
+	padding: 50px;
+	font-size: 50px;
+	color: white;
+}
+
+.hed-right {
+	float: right;
+	background-color:blue;
+	transition: all 0.5s;
+	margin: 40px 150px 0 0;
+}
+
+.hed-right a {
+	padding: 25px;
+	font-size: 40px;
+	color: white;
+	display: block;
+}
+
+.hed-right:hover{
+	background-color: skyblue;
+}
+
+.main {
+	width: 1350px;
+	background-color:;
+	margin: 0 auto;
+}
+
+.main img {
+	width: 100%;
+
+}
+
+.main ul {
 	line-height: 50px;
+	letter-spacing: 2px;
+	padding: 30px;
 }
 
+iframe {
+	width: 100%;
+}

@@ -51,18 +51,19 @@ table {
 @media(max-width:670px) {
   header{
 	width: 100%;
-	height: 30px;
-	padding: 10px 0;
+	height: 100px;
 	background-color: gray;
-	font-size: 25px;
  }
- .hed h1{
+ .hed-left h1{
 	 float: left;
-	 padding: 30px;
+	 padding: 20px;
+	 color: white;
+	 font-size: 25px;
  }
- .hed a {
+ .hed-right {
 	 float: right;
-	 padding: 30px;
-	 color: black;
+	 padding: 20px;
+	 color:white;
+	 font-size: 25px;
  }
 }
