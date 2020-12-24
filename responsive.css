@@ -59,15 +59,15 @@ table {
  
  
 .hed-left h1 {
-	padding: 50px 0 50px 10px;
-	font-size: 50px;
+	padding: 55px 0 20px 10px;
+	font-size: 35px;
 }
 
  .hed-right {
 	 background-color: green;
-	 margin: 40px 20px 0 0;
+	 margin: 50px 10px 0 0;
  }
  .hed-right a {
-	padding: 20px;
-	font-size: 45px;
+	padding:20px 8px;
+	font-size: 25px;
 }
