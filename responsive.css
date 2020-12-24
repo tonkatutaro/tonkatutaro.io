@@ -48,22 +48,26 @@ table {
 	border-spacing: 0;
 }
 
+* {
+	box-sizing: border-box;
+  }
+
 @media(max-width:670px) {
-  header{
-	width: 100%;
-	height: 100px;
+	header{
 	background-color: gray;
  }
- .hed-left h1{
-	 float: left;
-	 padding: 20px;
-	 color: white;
-	 font-size: 25px;
- }
+ 
+ 
+.hed-left h1 {
+	padding: 50px 0 50px 10px;
+	font-size: 50px;
+}
+
  .hed-right {
-	 float: right;
-	 padding: 20px;
-	 color:white;
-	 font-size: 25px;
+	 background-color: green;
+	 margin: 40px 20px 0 0;
  }
+ .hed-right a {
+	padding: 20px;
+	font-size: 45px;
 }

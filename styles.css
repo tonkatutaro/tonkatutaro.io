@@ -52,6 +52,10 @@ a{
 	text-decoration: none;
 }
 
+* {
+	box-sizing: border-box;
+  }
+
 header {
 	background-color:rgba(0, 179, 135, 0.9);
 	height: 150px;
@@ -59,7 +63,8 @@ header {
 }
 
 .container{
-	width: 1170px;
+	max-width: 1170px;
+	width: 100%;
 	padding:0 15px;
 	margin: 0 auto;
 }
@@ -91,14 +96,13 @@ header {
 }
 
 .main {
-	width: 1350px;
+	width: 100%;
 	background-color:;
 	margin: 0 auto;
 }
 
 .main img {
 	width: 100%;
-
 }
 
 .main ul {
