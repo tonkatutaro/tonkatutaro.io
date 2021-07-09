@@ -91,6 +91,14 @@ header {
 	align-items: center;
 }
 
+.logo h1::before{
+	content:'	-';
+}
+
+.logo h1::after{
+	content:'-	';
+}
+
 .sp-menu {
 	margin-left: auto;
 }
@@ -121,9 +129,9 @@ header h1 {
 	white-space: nowrap;
 }
 
-.overlay-nav ul{
-	/* display: flex; */
-}
+/* .overlay-nav ul{
+	display: flex;
+} */
 
 .overlay li {
 	font-size: 30px;
@@ -137,12 +145,12 @@ header h1 {
 	border-radius: 10px; */
 }	
 
-.overlay-nav {
-	/* background-color:blue; */
-	/* transition: all 0.5s; */
-	/* margin-left: 15px; */
+/* .overlay-nav {
+	background-color:blue;
+	transition: all 0.5s;
+	 margin-left: 15px;
 	
-}
+} */
 
 .home {
 	border-top: black solid 2px;
