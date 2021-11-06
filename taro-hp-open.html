@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>とんかつ太郎</title>
     <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.2.1/font-awesome-animation.css"
+        type="text/css" media="all" />
+    <link rel="stylesheet" href="copy-taro-hp-open.css">
     <link rel="stylesheet" href="taro-responsive.css">
-    <link rel="stylesheet" href="taro-hp-open.css">
 </head>
 
 <body>
@@ -15,15 +18,27 @@
         <header>
             <div class="h-container">
                 <div class="logo">
-                    <i class="fas fa-piggy-bank fa-4x" class="pig"></i>
-                    <h1>とんかつ太郎</h1>
+                    <i class="fas fa-piggy-bank fa-3x pig faa-tada animated"></i>
+                    <h1 class="buruburu">とんかつ太郎</h1>
                 </div>
                 <div class="sp-menu">
-                    <i class="fas fa-bars fa-3x" id="open"></i>
+                    <button class="menu-trigger" id="open">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
+                <div class="pc-menu">
+                    <ul>
+                        <li><a href="">ホーム</a></li>
+                        <li><a href="">メニュー</a></li>
+                        <li><a href="">アクセス・営業時間</a></li>
+                    </ul>
+                </div>
+            </div>    
         </header>
         <div class="overlay">
-            <i class="fas fa-times fa-3x" id="close"></i>
+            <!-- <i class="fas fa-times fa-3x" id="close"></i> -->
             <div class="overlay-nav">
                 <ul>
                     <li>
@@ -48,7 +63,10 @@
         <main>
             <div class="main-container">
                 <div class="main-visual">
-                    <img class="store-picture" src="taro-gaikan.jpeg">
+                    <img class="store-picture current" src="taro-menu\taro-gaikan.jpeg">
+                    <img class="store-picture" src="taro-menu\naikan-isu.jpeg" alt="">
+                    <img class="store-picture" src="taro-menu\naikan-zasiki.jpeg" alt="">
+                    <img class="store-picture" src="taro-menu\o-doburu.jpg" alt="">
                 </div>
                 <div class="main-nav">
                     <ul>
@@ -61,38 +79,29 @@
                     </ul>
                 </div>
                 <div class="main-menu">
-                    <div class="menu-items">
-                        <img src="C:\Users\m&y\Desktop\hp-data\ro-sukatu.jpg" alt="">
-                    </div>
-                    <div class="menu-items">
-                        <img src="C:\Users\m&y\Desktop\hp-data\hirekatu.jpg" alt="">
-                    </div>
-                    <div class="menu-items">
-                        <img src="C:\Users\m&y\Desktop\hp-data\furaimori.JPG" alt="">
-                    </div>
-                    <div class="menu-items">
-                        <img src="C:\Users\m&y\Desktop\hp-data\jo-katudon.jpg" alt="">
-                    </div>
-                    <div class="menu-items">
-                        <img src="C:\Users\m&y\Desktop\hp-data\katukare-100.JPG" alt="">
-                    </div>
-                    <div class="menu-items">
-                        <img src="C:\Users\m&y\Desktop\hp-data\syougayaki.JPG" alt="">
-                    </div>
+
+                    <ul>
+                        <li><h3>ロースカツ定食 990円</h3><img src="taro-menu\teisyoku\ro-sukatu.jpg" alt=""></li>
+                        <li><h3>ヒレカツ定食   1350円</h3><img src="taro-menu\teisyoku\hirekatu.jpg" alt=""></li>
+                        <li><h3>フライ盛り合わせ定食 1130円</h3><img src="taro-menu\teisyoku\furaimori.jpg" alt=""></li>
+                        <li><h3>上かつ丼 1160円</h3><img src="taro-menu\donburi\jo-katudon.jpg " alt=""></li>
+                        <li><h3>カツカレー100g 1260円</h3><img src="taro-menu\kare-\katukare-100.jpg" alt=""></li>
+                        <li><h3>肉の生姜焼き定食 990円</h3><img src="taro-menu\teisyoku\syougayaki.jpg" alt=""></li>
+                    </ul>
                 </div>
             </div>
         </main>
         <footer>
             <div class="f-container">
                 <div class="fot-logo">
-                    <i class="fas fa-piggy-bank fa-4x"></i>
+                    <i class="fas fa-piggy-bank fa-3x faa-passing animated"></i>
                     <h1>とんかつ太郎</h1>
                 </div>
                 <div class="fot-detail">
                     <ul>
                         <li>住所：東京都青梅市千ヶ瀬町5-604-1</li>
                         <br>
-                        <li>営業時間&nbsp;&nbsp;『昼の部』１１：００～１５：００<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;『夜の部』１７：００～２０：００
+                        <li>営業時間<br>&nbsp;『昼の部』１１：００～１５：００<br>&nbsp;『夜の部』１７：００～２０：００
                         </li>
                         <br>
                         <li>定休日：水曜日</li>
@@ -100,16 +109,13 @@
                         <li>電話：<a href="tel:090-3246-2228">090-3246-2228</a></li>
                     </ul>
                 </div>
-
-                <frame
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1618.279965258642!2d139.26404781639582!3d35.786184922271715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x99704e49586631d4!2z44Go44KT44GL44Gk5aSq6YOO!5e0!3m2!1sja!2sjp!4v1606027422749!5m2!1sja!2sjp"
-                    width="600" height"450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                    tabindex="0">
-                </frame>
             </div>
         </footer>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3236.5597509597974!2d139.26295331474927!3d35.78618933181705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60192412961f0801%3A0x99704e49586631d4!2z44Go44KT44GL44Gk5aSq6YOO!5e0!3m2!1sja!2sjp!4v1627301633761!5m2!1sja!2sjp"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
-    <script src="taro-js.js"></script>
+    <script src="copy-taro-js.js"></script>
 </body>
 
 </html>
